@@ -32,7 +32,9 @@ export class NavBarComponent implements OnInit {
   logout(){
     localStorage.removeItem('login_sport_capsule');
     this.route.navigateByUrl('');
-    location.reload();
+    setTimeout(() => {
+      location.reload();
+    }, 500);
   }
 
 }
