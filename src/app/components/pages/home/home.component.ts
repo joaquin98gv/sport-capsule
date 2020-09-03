@@ -20,10 +20,12 @@ export class HomeComponent implements OnInit {
                 private actRoute: ActivatedRoute,
                 public dialog: MatDialog  ) {
     this.logeado = loginS.estaLogeado();
-    this.actRoute.queryParams.subscribe((x: any) => {
-      this.crearTorneo = x.crearTorneo != null ? true : false;
-      this.unirseTorneo = x.unirseTorneo != null ? true : false;
-    });
+    if (this.logeado) {
+      this.actRoute.queryParams.subscribe((x: any) => {
+        this.crearTorneo = x.crearTorneo != null ? true : false;
+        this.unirseTorneo = x.unirseTorneo != null ? true : false;
+      });
+    }
   }
 
   ngOnInit(): void {
