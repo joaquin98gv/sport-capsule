@@ -1,12 +1,12 @@
 <div class="row mt-5" *ngIf="!logeado">
     <div class="col text-center">
-        <div class="pointer shadow-pointer" style="width: 150px; margin: auto;">
+        <div class="pointer shadow-pointer" style="width: 150px; margin: auto;" (click)="btnCrearTorneo()">
             <mat-icon mat-list-icon class="scale-5 my-5">add</mat-icon><br>
             <span class="full-width">Crear torneo</span>
         </div>
     </div>
     <div class="col text-center">
-        <div class="pointer shadow-pointer" style="width: 150px; margin: auto;">
+        <div class="pointer shadow-pointer" style="width: 150px; margin: auto;" (click)="btnUnirseTorneo()">
             <mat-icon mat-list-icon class="scale-5 my-5">group_work</mat-icon><br>
             <span class="full-width">Unirse a un torneo</span>
         </div>

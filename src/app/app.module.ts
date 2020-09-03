@@ -23,8 +23,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UnirseTorneoComponent } from './components/unirse-torneo/unirse-torneo.component';
 
 
 
@@ -35,7 +37,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     HomeComponent,
     ContactComponent,
-    CrearTorneoComponent
+    CrearTorneoComponent,
+    UnirseTorneoComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatRippleModule
+    MatRippleModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

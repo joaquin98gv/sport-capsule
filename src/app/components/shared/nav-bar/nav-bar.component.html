@@ -12,8 +12,12 @@
         <button mat-icon-button>
             <mat-icon class="t-s-1-5">notifications</mat-icon>
         </button>
-        <button mat-icon-button>
+        <button mat-icon-button mat-button [matMenuTriggerFor]="beforeMenuAdmin">
             <mat-icon class="t-s-1-5">account_circle</mat-icon>
         </button>
+        <mat-menu #beforeMenuAdmin="matMenu" xPosition="before">
+            <button mat-menu-item>Mi perfil</button>
+            <button mat-menu-item (click)="logout()">Cerrar Sesion</button>
+        </mat-menu>
     </div>
 </mat-toolbar>

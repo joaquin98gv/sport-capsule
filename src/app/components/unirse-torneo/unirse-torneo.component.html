@@ -1,0 +1,23 @@
+<h2 mat-dialog-title align="center">Unirse a un Torneo</h2>
+<mat-dialog-content class="mat-typography">
+    <div *ngIf="!confirmacion">
+        <form>
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Torneo</mat-label>
+                <input matInput placeholder="LIGA2020" name="torneo">
+            </mat-form-field>
+        </form>
+    </div>
+
+    <div *ngIf="confirmacion">
+        <label>Estas a punto de unirte al torneo: <b>TORNEO 2020</b> </label><br>
+        <label>Creado por: <b>@HabaneroG</b> </label><br>
+        <label>Cupo: <b>8/10</b> </label><br>
+    </div>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button cdkFocusInitial (click)="verificar()" *ngIf="!confirmacion">verificar</button>
+    <button mat-button [mat-dialog-close]="true" *ngIf="confirmacion">Unirme</button>
+</mat-dialog-actions>

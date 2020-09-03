@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { LoginService } from '../../../services/login.service';
 import { MatDialog } from '@angular/material/dialog';
 import { CrearTorneoComponent } from '../../crear-torneo/crear-torneo.component';
+import { UnirseTorneoComponent } from '../../unirse-torneo/unirse-torneo.component';
 
 @Component({
   selector: 'app-sidebar',
@@ -36,8 +37,18 @@ export class SidebarComponent implements OnInit {
 
   crearTorneoDialog(): void {
     const dialogRef = this.dialog.open(CrearTorneoComponent, {
-      width: '60%',
+      width: '70%',
       // data: {name: this.name, animal: this.animal}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  unirseTorneoDialog(): void {
+    const dialogRef = this.dialog.open(UnirseTorneoComponent, {
+      width: '70%'
     });
 
     dialogRef.afterClosed().subscribe(result => {

@@ -9,7 +9,7 @@
                 <span class="full-width" *ngIf="isExpanded || isShowing">Crear torneo</span>
                 <mat-icon mat-list-icon matTooltip="Crear torneo" matTooltipPosition="right" matTooltipHideDelay="1500">add</mat-icon>
             </a>
-            <a mat-list-item routerLink="/joint_tour">
+            <a mat-list-item (click)="unirseTorneoDialog()">
                 <span class="full-width" *ngIf="isExpanded || isShowing">Unirse a un torneo</span>
                 <mat-icon mat-list-icon matTooltip="Unirse a un torneo" matTooltipPosition="right" matTooltipHideDelay="1500">group_work</mat-icon>
             </a>
