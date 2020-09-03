@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="changeIt()" *ngIf="logeado"><mat-icon>menu</mat-icon></button>
+    <h1>Sport Capsule</h1>
+
+    <span class="spacer"></span>
+
+    <button mat-raised-button *ngIf="!logeado" (click)="btnTempLogin()">Iniciar Sesion</button>
+    <div *ngIf="logeado">
+        <button mat-icon-button>
+            <mat-icon class="t-s-1-5">apps</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon class="t-s-1-5">notifications</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon class="t-s-1-5">account_circle</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>

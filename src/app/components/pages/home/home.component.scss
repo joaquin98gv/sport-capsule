@@ -1,0 +1,26 @@
+.f-s-50 {
+    font-size: 150px;
+}
+
+.scale-5 {
+    transform: scale(5);
+}
+
+.shadow-pointer {
+    transition: .6s;
+    border-radius: 10px;
+}
+
+.shadow-pointer:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+}
+
+.header-image {
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .md-container {
+        margin: 20px 40px;
+    }
+}

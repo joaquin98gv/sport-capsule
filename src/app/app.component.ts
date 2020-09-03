@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sport-capsule';
+  isExpanded = true;
+
+  changeIt(event: boolean): void {
+    console.log(event);
+    this.isExpanded = event;
+  }
 }

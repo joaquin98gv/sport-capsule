@@ -1,0 +1,42 @@
+.container-mod {
+    height: calc(100vh - 64px);
+}
+
+.content {
+    height: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.sidenav {
+    transition: 1s;
+    user-select: none;
+    background-color: #fafafa !important;
+    border: none;
+}
+
+.menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+}
+
+.menu-button.rotated {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    overflow-y: hidden;
+    transition: transform 300ms ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    padding-left: 30px;
+}
+
+.submenu.expanded {
+    transform: scaleY(1);
+}
+
+.active-link {
+    border-right: 5px solid red !important;
+}
