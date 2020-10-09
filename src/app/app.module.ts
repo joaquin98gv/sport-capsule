@@ -24,9 +24,13 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UnirseTorneoComponent } from './components/unirse-torneo/unirse-torneo.component';
+import { HistoryComponent } from './components/pages/history/history.component';
+import { DetalleResultadoTorneoComponent } from './components/detalle-resultado-torneo/detalle-resultado-torneo.component';
 
 
 
@@ -38,7 +42,9 @@ import { UnirseTorneoComponent } from './components/unirse-torneo/unirse-torneo.
     HomeComponent,
     ContactComponent,
     CrearTorneoComponent,
-    UnirseTorneoComponent
+    UnirseTorneoComponent,
+    HistoryComponent,
+    DetalleResultadoTorneoComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +66,9 @@ import { UnirseTorneoComponent } from './components/unirse-torneo/unirse-torneo.
     MatDatepickerModule,
     MatNativeDateModule,
     MatRippleModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

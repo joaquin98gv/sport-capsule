@@ -17,7 +17,7 @@
                 <span class="full-width" *ngIf="isExpanded || isShowing">Amigos</span>
                 <mat-icon mat-list-icon matTooltip="Amigos" matTooltipPosition="right" matTooltipHideDelay="1500">people</mat-icon>
             </a>
-            <a mat-list-item routerLink="/friends">
+            <a mat-list-item routerLink="/history">
                 <span class="full-width" *ngIf="isExpanded || isShowing">Historial</span>
                 <mat-icon mat-list-icon matTooltip="Historial" matTooltipPosition="right" matTooltipHideDelay="1500">history</mat-icon>
             </a>
@@ -41,7 +41,7 @@
         </mat-nav-list>
     </mat-sidenav>
 
-    <div class="content container mt-1">
+    <div class="content container mt-5">
         <router-outlet></router-outlet>
     </div>
 
